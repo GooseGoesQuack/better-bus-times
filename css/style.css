@@ -1,0 +1,79 @@
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('ProximaNovaSoft-Bold.otf');
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'ProximaNova', sans-serif;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff
+}
+
+h1, h2 {
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+p {
+    font-weight: 300;
+    margin: 10px 0;
+} 
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    background-color: #e32018;
+    color: #fff; 
+    height: 64px;
+}
+
+.navbar .li {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-radius: 10px;
+    background-color: #cc1d16;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
