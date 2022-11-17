@@ -43,7 +43,7 @@ img {
     height: 64px;
 }
 
-.navbar .li {
+.navbar ul {
     display: flex;
 }
 
@@ -52,7 +52,7 @@ img {
     text-align: center;
     padding: 10px;
     font-size: 20px;
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 .navbar a:hover {
