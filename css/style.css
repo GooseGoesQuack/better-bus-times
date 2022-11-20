@@ -9,10 +9,6 @@
     margin: 0;
 }
 
-main {
-    display: flex;
-}
-
 body {
     font-family: 'ProximaNova', sans-serif;
     color: #333;
@@ -55,7 +51,7 @@ img {
     color: #fff;
     text-align: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: 22px;
     margin: 0 10px;
 }
 
@@ -89,17 +85,34 @@ img {
     font-weight: 300;
 }
 
+.menu .flex {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex;
+}
+
 .menu-container {
-    max-width: 1100px;
+    max-width: 800px;
     margin: 0 auto;
     overflow: auto;
-    padding: 0 40px;
 }
 
 .menu-container a {
-    color: #333;
+    font-size: 20px;
+    color: #000;
 }
 
-.menu-container h1 {
-    font-size: 40px;
+.menu-container h1{
+    font-size: 32px;
+    margin: 0;
+}
+
+.menu-container p {
+    font-size: 18px;
+    margin: 0;
+}
+
+#menu-nav {
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
