@@ -50,4 +50,32 @@
         </div>
     </div>
 </body>
+<script>
+    function get_times() {
+    $.ajax({
+        type: 'GET',
+        url:'https://api.tfl.gov.uk/Line/154/Arrivals/490012554E?modesFilter=tube&oysterOnly=false',
+        dataType: 'json',
+        success: function(data) {
+            var sorted = data.sort(function(a, b) {
+                if (a.timeToStation > b.timeToStation) {
+                    return 1;
+                }
+                if (a.timeToStation < b.timeToStation) {
+                    return -1;
+                }
+                return 0;
+            });
+            $.each(data, function(key, value) {
+                var line = value.lineName;
+                var destination = value.destinationName;
+                var time = value.timeToStation;
+                time = parseInt(time/60);
+                time < 1 ? time = "Due" : time = time +" min";
+                $("#times").append("<br>"+ line +" to "+ destination +" - "+ time)
+            });
+        }
+    });
+}
+</script>
 </html>
