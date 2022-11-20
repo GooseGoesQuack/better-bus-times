@@ -82,17 +82,24 @@ img {
     height: 100%;
 }
 
-.nav-menu {
+.menu {
     background-color: #fcf7f5;
     color: #000; 
     height: 120px;
     font-weight: 300;
 }
 
-.nav-menu a {
+.menu-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.menu-container a {
     color: #333;
 }
 
-.nav-menu h1 {
+.menu-container h1 {
     font-size: 40px;
 }
