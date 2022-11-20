@@ -65,8 +65,8 @@ img {
 }
 
 .nav-container {
-    max-width: 1100px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto 0;
     overflow: auto;
     padding: 0 40px;
 }
@@ -81,7 +81,7 @@ img {
 .menu {
     background-color: #fcf7f5;
     color: #000; 
-    height: 120px;
+    height: 160px;
     font-weight: 300;
 }
 
@@ -92,27 +92,31 @@ img {
 }
 
 .menu-container {
-    max-width: 800px;
+    max-width: 1100px;
     margin: 0 auto;
     overflow: auto;
 }
 
 .menu-container a {
-    font-size: 20px;
+    font-size: 25px;
     color: #000;
+    margin: 0 auto 0 62px;
 }
 
-.menu-container h1{
-    font-size: 32px;
-    margin: 0;
+.menu-container h1 {
+    font-size: 50px;
+    margin: 0 auto 0 62px;
 }
 
 .menu-container p {
-    font-size: 18px;
-    margin: 0;
+    font-size: 25px;
+    margin: 0 auto 0 62px;
 }
 
-#menu-nav {
+.menu-nav {
     margin-top: 20px;
     margin-bottom: 0px;
+}
+
+.departures {
 }
