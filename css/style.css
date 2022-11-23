@@ -118,9 +118,32 @@ img {
     margin-bottom: 0px;
 }
 
+.stopinfo-container {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.stopinfo-container .flex {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .departures {
-    background-color: #fcf7f5;
+    background-color: #ffd0d0;
+    width: 680px;
     color: #000; 
-    height: 160px;
+    height: 200px;
     font-weight: 300;
+    overflow: auto;
+}
+
+.map {
+    background-color: #ffd0d0;
+    width: 230px;
+    height: 200px;
+    color: #000; 
+    margin: 0 auto;
+    overflow: auto;
 }
