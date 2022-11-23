@@ -119,4 +119,8 @@ img {
 }
 
 .departures {
+    background-color: #fcf7f5;
+    color: #000; 
+    height: 160px;
+    font-weight: 300;
 }
