@@ -98,18 +98,18 @@ img {
 }
 
 .menu-container a {
-    font-size: 25px;
+    font-size: 20px;
     color: #000;
     margin: 0 auto 0 62px;
 }
 
 .menu-container h1 {
-    font-size: 50px;
+    font-size: 40px;
     margin: 0 auto 0 62px;
 }
 
 .menu-container p {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0 auto 0 62px;
 }
 
@@ -131,17 +131,68 @@ img {
 }
 
 .departures {
-    background-color: #ffd0d0;
-    width: 680px;
-    color: #000; 
-    height: 200px;
+    background-color: #fcf7f5;
+    width: 610px;
+    min-height: 50px;
     font-weight: 300;
     overflow: auto;
+    margin-top: 0;
+    margin-bottom: auto;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #595959;
+    border-width: 2px;
+}
+
+.departures-top {
+    color: #000; 
+    height: 48px;
+    margin-top: 0;
+    margin-bottom: auto;    
+}
+
+#live-arrivals {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.arrival {
+    height: 64px;
+    margin-left: 0px;
+    margin-right: auto;
+    border-style: solid;
+    border-color: #595959;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-width: 2px;
+}
+
+.arrival .flex {
+    justify-content: flex-start;
+}
+
+.line {
+    font-size: 38px;
+    margin-left: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 80px;
+    color: #e10700;
+}
+
+.destination {
+    font-size: 24px;
+    margin-left: 50px;
+    margin-right: auto;
 }
 
 .map {
     background-color: #ffd0d0;
-    width: 230px;
+    width: 300px;
     height: 200px;
     color: #000; 
     margin: 0 auto;
