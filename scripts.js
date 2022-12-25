@@ -1,4 +1,5 @@
-function get_times() {
+function getTimes() {
+    
     $.ajax({
         type: 'GET',
         url:'https://api.tfl.gov.uk/Line/154/Arrivals/490012554E?modesFilter=tube&oysterOnly=false',
@@ -19,27 +20,13 @@ function get_times() {
                 var time = value.timeToStation;
                 var vehicle = value.vehicleId;
                 time = parseInt(time/60);
-                time < 1 ? time = "Due" : time = time +" min";
-                addTime(vehicle, line, destination, time)
+                addTime(vehicle, line, destination, time);
             });
         }
     });
 }
 
-function new_li(vehicle, line, destination, time) {
-}
-
-function addTime(vehicle, line, destination, time) {
-    var newDiv = Object.assign(
-        document.createElement(`div`), 
-        { class: `arrival flex`, 
-        innerHTML: `<span class="line">154</span>
-        <span class="destination">West Croydon</span>
-        <span class="eta">15</span><span class="min">min</span>`});
-      document.body.appendChild(newElem);
-  }
-
-function addTime2(){
+function addTime(vehicle, line, destination, time){
     var container = document.getElementById('depart-container')
 
     var newDiv = document.createElement("div");
@@ -49,19 +36,19 @@ function addTime2(){
 
     var newLine = document.createElement("span");
     newLine.classList.add("line");
-    var lineContent = document.createTextNode("154");
+    var lineContent = document.createTextNode(line);
     newLine.appendChild(lineContent);
     newDiv.appendChild(newLine);
 
     var newDest = document.createElement("span");
     newDest.classList.add("destination");
-    var destContent = document.createTextNode("West Croydon");
+    var destContent = document.createTextNode(destination);
     newDest.appendChild(destContent);
     newDiv.appendChild(newDest);
 
     var newETA = document.createElement("span");
     newETA.classList.add("eta");
-    var ETAContent = document.createTextNode("15");
+    var ETAContent = document.createTextNode(time);
     newETA.appendChild(ETAContent);
     newDiv.appendChild(newETA);
 
