@@ -131,7 +131,7 @@ img {
 }
 
 .departures {
-    background-color: #fcf7f5;
+    background-color: #e32018;
     width: 610px;
     min-height: 50px;
     font-weight: 300;
@@ -140,12 +140,12 @@ img {
     margin-bottom: auto;
     border-radius: 20px;
     border-style: solid;
-    border-color: #595959;
+    border-color: #e32018;
     border-width: 2px;
 }
 
 .departures-top {
-    color: #000; 
+    color: #fff; 
     height: 48px;
     margin-top: 0;
     margin-bottom: auto;    
@@ -154,21 +154,35 @@ img {
 #live-arrivals {
     font-size: 20px;
     margin-left: 15px;
-    margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
 }
 
+#at {
+    font-size: 20px;
+    margin-left: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#time {
+    font-size: 20px;
+    margin-left: 12px;
+    margin-right: auto;
+}
+
+#refresh {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+}
+
 .arrival {
-    height: 64px;
+    height: 56px;
     margin-left: 0px;
     margin-right: auto;
-    border-style: solid;
-    border-color: #595959;
-    border-right: 0px;
-    border-left: 0px;
-    border-bottom: 0px;
-    border-width: 2px;
+    background-color: #fcf7f5;
+    color: #333;
 }
 
 .arrival .flex {
@@ -181,13 +195,26 @@ img {
     margin-top: auto;
     margin-bottom: auto;
     width: 80px;
-    color: #e10700;
+    color: #333;
 }
 
 .destination {
     font-size: 24px;
-    margin-left: 50px;
+    margin-left: 15px;
     margin-right: auto;
+}
+
+.eta {
+    font-size: 38px;
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+.min {
+    font-size: 18px;
+    margin-right: 15px;
+    margin-bottom: 12px;
+    margin-top: auto;
 }
 
 .map {
