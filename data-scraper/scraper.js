@@ -8,8 +8,8 @@ function getTFL() {
                 var requestTime = (new Date()).getTime();
                 var busID = value.vehicleId;
                 var eta = value.timeToStation;
-                var mapsTraffic;     
-                write(requestTime, busID, eta, mapsTraffic)
+                var mapsTraffic = 0;
+                write(requestTime, busID, eta, mapsTraffic);
             });
         }
     });
